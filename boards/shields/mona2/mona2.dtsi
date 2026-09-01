@@ -2,6 +2,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
+#include <mouse-gesture.dtsi>
 
 / {
     chosen {
@@ -88,6 +89,20 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+
+        gesture {
+            layers = <6>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+    };
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture_on_l6 {
+            layers = <6>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
     };
 
     left_encoder: encoder_left {

@@ -65,7 +65,7 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <17 18 19 27 29 31 39>;
+    excluded-positions = <11 12 13 17 18 19 22 24 29 31>;
     require-prior-idle-ms = <300>;
 };
 
@@ -77,7 +77,7 @@
     input-processors = <&zip_temp_layer 4 10000>;
 
     scroller {
-        layers = <2>;
+        layers = <5>;
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
