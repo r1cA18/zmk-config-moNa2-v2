@@ -55,7 +55,7 @@
         cpi = <600>;
         //swap-xy;
         invert-x; //COROPIT版ではコメントアウトを外す
-        //invert-y;　//COROPIT版ではコメントアウトを外す
+        //invert-y; //COROPIT版ではコメントアウトを外す
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -63,20 +63,13 @@
     };
 };
 
-&zip_temp_layer {
-    excluded-positions = <10 17 18 19 21 29 31>;
-    require-prior-idle-ms = <300>;  // 好きなmsに調整（例: 300ms）
-};
-
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
 
-    input-processors = <&zip_temp_layer 5 10000>; 
-
     scroller {
-        layers = <3>;
+        layers = <2>;
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
