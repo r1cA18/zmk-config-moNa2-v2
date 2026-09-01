@@ -66,7 +66,7 @@ Trackballを動かすとMouse layerが10秒間有効になります。Mouse laye
 滑らかさを優先してPMW3610を次の設定で動作させています。
 
 - CPI: `3200`
-- Cursor scaling: `1/2`
+- Cursor scaling: `1/3`
 - Sampling interval: `4ms`
 - Report interval limit: `0ms`
 - Bluetooth connection interval: `7.5ms`
