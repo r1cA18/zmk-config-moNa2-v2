@@ -8,6 +8,7 @@
 #define LOWER 1
 #define RAISE 2
 #define CONTROL 3
+#define MOUSE 4
 
 &lt {
     tapping-term-ms = <200>;
@@ -108,6 +109,18 @@
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans         &trans         &trans               &trans  &trans  &trans
 &bt BT_CLR_ALL  &out OUT_USB  &out OUT_TOG  &out OUT_BLE  &trans        &bt BT_CLR         &trans         &input_userid  &input_email_proton  &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans        &trans             &trans         &trans                                       &trans
+            >;
+        };
+
+        mouse_layer {
+            display-name = "Mouse";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
         };
     };
