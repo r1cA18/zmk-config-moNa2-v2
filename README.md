@@ -74,7 +74,32 @@ Trackballを動かすとMouse layerが10秒間有効になります。Mouse laye
 
 ## Build
 
-`main`へのpushでGitHub Actionsが左右のfirmwareとsettings reset firmwareをbuildします。生成されたfirmwareはworkflowのArtifactsから取得できます。
+`main`へのpushでGitHub Actionsが左右のfirmwareとsettings reset firmwareをbuildします。生成されたfirmwareは[Actions](https://github.com/r1cA18/zmk-config-moNa2-v2/actions)から取得できます。
+
+## Firmware書き込み
+
+### 通常の更新
+
+1. Actionsで最新の成功した`Build`workflowを開きます。
+2. `Artifacts`から`firmware`をdownloadして展開します。
+3. 左側をUSB接続してreset buttonを素早く2回押します。
+4. USB driveとして認識されたcontrollerへ`mona2_l rgbled_adapter-seeeduino_xiao_ble-zmk.uf2`をcopyします。
+5. 右側も同じ手順で`mona2_r rgbled_adapter-seeeduino_xiao_ble-zmk.uf2`をcopyします。
+6. 左側をUSB接続してkey入力とTrackball操作を確認します。
+
+UF2のcopy後はUSB driveが自動的にunmountされてcontrollerが再起動します。OSがcopy errorを表示しても書き込み済みの場合があるため、再起動後の動作で判断します。
+
+### Bluetooth接続を初期化する場合
+
+左右が接続できない場合やpairing情報を消したい場合だけ`settings_reset-seeeduino_xiao_ble-zmk.uf2`を使用します。
+
+1. 左右それぞれへ`settings_reset-seeeduino_xiao_ble-zmk.uf2`を書き込みます。
+2. 左側へ通常の左用UF2を書き込みます。
+3. 右側へ通常の右用UF2を書き込みます。
+4. PCやmobile device側の古いBluetooth登録を削除します。
+5. moNa2を再度pairingします。
+
+`settings_reset`はBluetooth profileや出力設定などの保存済み設定を消去します。通常のkeymap更新では使用しません。
 
 ## 参考
 
