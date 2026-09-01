@@ -61,7 +61,7 @@ Trackballを動かすとMouse layerが10秒間有効になります。Mouse laye
 
 ## COROPIT設定
 
-右側TrackballはCOROPIT向けにX軸とY軸を反転しています。
+右側TrackballはCOROPIT向けにX軸を反転しています。
 
 滑らかさを優先してPMW3610を次の設定で動作させています。
 
