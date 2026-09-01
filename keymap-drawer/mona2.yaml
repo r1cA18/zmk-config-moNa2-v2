@@ -20,7 +20,7 @@ layers:
   - K
   - T
   - N
-  - {t: S, h: Sft+AltGr+Ctl+RIGHT GUI}
+  - S
   - {t: H, h: Scroll}
   - {t: Z, h: LEFT SHIFT}
   - X
