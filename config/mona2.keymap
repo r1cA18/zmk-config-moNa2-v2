@@ -43,14 +43,14 @@
             display-name = "SandS";
         };
 
-        lt_tog: lt_tog {
+        lt_to: lt_to {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
+            bindings = <&mo>, <&to>;
 
-            display-name = "LT_TOG";
+            display-name = "LT_TO";
         };
 
         sands_lang: sands_lang {
@@ -99,7 +99,7 @@
             bindings = <
 &kp Q                       &kp L     &kp U            &kp COMMA            &kp DOT                                              &kp F        &kp W  &kp R  &kp Y  &lt GESTURE P
 &kp E                       &kp I     &HRM LEFT_ALT A  &HRM LS(LEFT_GUI) O  &HRM LEFT_CONTROL MINUS               &kp ESC        &kp K        &kp T  &kp N  &kp S  &lt SCROLL H
-&HRM LEFT_SHIFT Z           &kp X     &kp C            &kp V                &kp SEMI                 &kp LC(T)    &lt_tog 3 4    &kp G        &kp D  &kp M  &kp J  &HRM RIGHT_SHIFT B
+&HRM LEFT_SHIFT Z           &kp X     &kp C            &kp V                &kp SEMI                 &kp LC(T)    &lt_to 3 4     &kp G        &kp D  &kp M  &kp J  &HRM RIGHT_SHIFT B
 &sands_lang LEFT_GUI LANG2  &kp LEFT  &kp RIGHT        &kp LG(W)            &lt 2 SPACE              &lt 1 TAB    &kp BACKSPACE  &lt 2 ENTER                       &sands_lang RA(RIGHT_GUI) LANG1
             >;
         };
