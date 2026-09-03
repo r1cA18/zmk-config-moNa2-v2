@@ -27,8 +27,8 @@ layers:
   - C
   - V
   - ;
-  - MUTE
   - Ctl+T
+  - {t: Mouse, h: Ctrl}
   - G
   - D
   - M
@@ -37,7 +37,7 @@ layers:
   - {t: '&to_layer_0 LANG2', h: LEFT GUI}
   - LEFT
   - RIGHT
-  - {t: Mouse, h: Ctrl}
+  - Gui+W
   - {t: SPACE, h: Raise}
   - {t: TAB, h: Lower}
   - BACKSPACE
@@ -157,7 +157,7 @@ layers:
   - OUT BLE
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
+  - {type: held}
   - '&input_userid'
   - '&input_email_proton'
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
