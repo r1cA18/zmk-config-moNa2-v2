@@ -34,7 +34,7 @@ layers:
   - M
   - J
   - {t: B, h: RIGHT SHIFT}
-  - {t: LANG2, h: LEFT GUI}
+  - {t: '&to_layer_0 LANG2', h: LEFT GUI}
   - LEFT
   - RIGHT
   - {t: Mouse, h: Ctrl}
@@ -42,7 +42,7 @@ layers:
   - {t: TAB, h: Lower}
   - BACKSPACE
   - {t: ENTER, h: Raise}
-  - {t: LANG1, h: AltGr+RIGHT GUI}
+  - {t: '&to_layer_0 LANG1', h: AltGr+RIGHT GUI}
   Lower:
   - F1
   - F2
