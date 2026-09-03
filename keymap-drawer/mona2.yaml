@@ -37,7 +37,7 @@ layers:
   - {t: LANG2, h: LEFT GUI}
   - LEFT
   - RIGHT
-  - {t: Gui+W, h: Ctrl}
+  - {t: Mouse, h: Ctrl}
   - {t: SPACE, h: Raise}
   - {t: TAB, h: Lower}
   - BACKSPACE
