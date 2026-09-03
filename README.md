@@ -11,7 +11,7 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 - 大西配列をベースにした42キー向けkeymap
 - Home Row ModsとSandS
 - 左右どちらの手でも使えるMouse layer
-- Trackball操作で10秒間Mouse layerを自動有効化
+- 左手親指キーtapによるMouse layer切り替え
 - `H`holdによるTrackball scroll
 - `P`holdによるTrackball gesture
 - ZMK Studio対応
@@ -22,7 +22,7 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 
 ### Mouse layer
 
-Trackballを動かすとMouse layerが10秒間有効になります。Mouse layerでは左右どちらの手でもmouse buttonを操作できます。
+左手親指キーをtapするとMouse layerが有効になります。Mouse layerでは左右どちらの手でもmouse buttonを操作できます。
 
 | キー | 動作 |
 | --- | --- |
@@ -54,8 +54,8 @@ Trackballを動かすとMouse layerが10秒間有効になります。Mouse laye
 | Main | 大西配列 | Default |
 | Lower | Function keyと数字 | `Tab`hold |
 | Raise | 記号とcursor | `Space`holdまたは`Enter`hold |
-| Ctrl | Bluetoothと出力設定 | `GUI+W`hold |
-| Mouse | Mouse button | Trackball操作で自動起動 |
+| Ctrl | Bluetoothと出力設定 | 左手親指キーhold |
+| Mouse | Mouse button | 左手親指キーtap |
 | Scroll | Trackball scroll | `H`hold |
 | Gesture | Browser tab操作 | `P`hold |
 
