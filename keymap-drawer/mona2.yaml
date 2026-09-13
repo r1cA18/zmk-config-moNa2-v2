@@ -201,7 +201,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+W
   - '&mkp MB4'
   - '&mkp MB5'
   - Gui+RIGHT
