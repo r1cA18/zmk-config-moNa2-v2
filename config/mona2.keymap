@@ -141,10 +141,10 @@
             display-name = "Mouse";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)     &kp LC(T)
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1      &mkp MB2       &mkp MB3       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB4      &mkp MB5       &kp LG(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                              &trans
+&trans  &trans  &trans  &trans  &trans                    &kp LC(UP)  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LEFT       &kp RIGHT
+&trans  &trans  &trans  &trans  &trans            &trans  &kp LC(T)   &mkp MB1      &mkp MB2       &mkp MB3       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &mkp MB4      &mkp MB5       &kp LG(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
             >;
         };
 
