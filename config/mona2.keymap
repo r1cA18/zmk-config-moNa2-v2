@@ -143,7 +143,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &kp LC(UP)  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LEFT       &kp RIGHT
 &trans  &trans  &trans  &trans  &trans            &trans  &kp LC(T)   &mkp MB1      &mkp MB2       &mkp MB3       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &mkp MB4      &mkp MB5       &kp LG(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(W)   &mkp MB4      &mkp MB5       &kp LG(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                  &trans
             >;
         };
