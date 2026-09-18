@@ -95,7 +95,7 @@
 
         main_layer {
             display-name = "Main";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
 &kp Q                       &kp L     &kp U            &kp COMMA            &kp DOT                                              &kp F        &kp W  &kp R  &kp Y  &lt GESTURE P
 &kp E                       &kp I     &HRM LEFT_ALT A  &HRM LS(LEFT_GUI) O  &HRM LEFT_CONTROL MINUS               &kp ESC        &kp K        &kp T  &kp N  &kp S  &lt SCROLL H
