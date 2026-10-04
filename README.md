@@ -9,7 +9,8 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 ## 主な機能
 
 - 大西配列をベースにした42キー向けkeymap
-- Home Row ModsとSandS
+- 同じ手の連続打鍵では発動しないHome Row ModsとSandS
+- AeroSpace操作専用のWindow layer
 - 左右どちらの手でも使えるMouse layer
 - 左手親指キーtapによるMouse layer切り替え
 - `H`holdによるTrackball scroll
@@ -47,17 +48,36 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 | 上 | 新規tab | `GUI+T` |
 | 下 | tabを閉じる | `GUI+W` |
 
+## Window layer
+
+`Cmd+W`キーをholdするとAeroSpace操作用のWindow layerになります。tapした場合は通常の`Cmd+W`が入力されます。AeroSpace側の設定はdotfilesで管理しています。
+
+| キー | 動作 | Shortcut |
+| --- | --- | --- |
+| `F` `W` `R` `Y` `P` | Workspace 1-5へ切り替え | `Alt+1`-`Alt+5` |
+| `G` `D` `M` `J` `B` | Windowをworkspace 1-5へ移動してfocusも追従 | `Alt+Shift+1`-`Alt+Shift+5` |
+| `K` `T` `N` `S` | Focusを左下上右へ移動 | `Alt+H/J/K/L` |
+| `I` `A` `O` `-` | Windowを左下上右へ移動 | `Alt+Shift+H/J/K/L` |
+| `H` | 直前のworkspaceへ戻る | `Alt+Tab` |
+| `Z` | Fullscreen | `Alt+F` |
+| `X` | Floatingとtilingの切り替え | `Alt+Space` |
+
+Focus移動はRaise layerの矢印と同じ位置です。Windowの移動先workspaceは切り替えキーの同じ列に配置しています。
+
 ## Layer構成
 
 | Layer | 用途 | 起動方法 |
 | --- | --- | --- |
 | Main | 大西配列 | Default |
-| Lower | Function keyと数字 | `Tab`hold |
+| Lower | Function keyと数字と演算子 | `Tab`hold |
 | Raise | 記号とcursor | `Space`holdまたは`Enter`hold |
-| Ctrl | Bluetoothと出力設定 | 左手親指キーhold |
+| Ctrl | Bluetoothと出力設定と音量と明るさとsleep | 左手親指キーhold |
 | Mouse | Mouse button | 左手親指キーtap |
 | Scroll | Trackball scroll | `H`hold |
 | Gesture | Browser tab操作 | `P`hold |
+| Window | AeroSpace操作 | `Cmd+W`hold |
+
+Ctrl layerでは`F`と`W`の位置で画面の明るさを下げる・上げる操作（`F14`と`F15`）ができます。`P`の位置はsleep用の`` Shift+` ``です。
 
 ## COROPIT設定
 

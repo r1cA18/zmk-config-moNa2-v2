@@ -12,6 +12,7 @@
 #define MOUSE 4
 #define SCROLL 5
 #define GESTURE 6
+#define WINDOW 7
 
 &lt {
     tapping-term-ms = <200>;
@@ -20,17 +21,42 @@
 
 / {
     behaviors {
-        HRM: homerow_mods {
+        HRM_L: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <250>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 20 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
 
             display-name = "HRM";
+        };
+
+        HRM_R: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <250>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 21 22 23 24 25 26 27 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+
+            display-name = "HRM";
+        };
+
+        lt_kp: lt_kp {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "LT";
         };
 
         SandS: SandS {
@@ -97,10 +123,10 @@
             display-name = "Main";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp Q                       &kp L     &kp U            &kp COMMA            &kp DOT                                              &kp F        &kp W  &kp R  &kp Y  &lt GESTURE P
-&kp E                       &kp I     &HRM LEFT_ALT A  &HRM LS(LEFT_GUI) O  &HRM LEFT_CONTROL MINUS               &kp ESC        &kp K        &kp T  &kp N  &kp S  &lt SCROLL H
-&HRM LEFT_SHIFT Z           &kp X     &kp C            &kp V                &kp SEMI                 &kp LC(T)    &lt_to 3 4     &kp G        &kp D  &kp M  &kp J  &HRM RIGHT_SHIFT B
-&sands_lang LEFT_GUI LANG2  &kp LEFT  &kp RIGHT        &kp LG(W)            &lt 2 SPACE              &lt 1 TAB    &kp BACKSPACE  &lt 2 ENTER                       &sands_lang RA(RIGHT_GUI) LANG1
+&kp Q                       &kp L     &kp U              &kp COMMA              &kp DOT                                              &kp F        &kp W  &kp R  &kp Y  &lt GESTURE P
+&kp E                       &kp I     &HRM_L LEFT_ALT A  &HRM_L LS(LEFT_GUI) O  &HRM_L LEFT_CONTROL MINUS             &kp ESC        &kp K        &kp T  &kp N  &kp S  &lt SCROLL H
+&HRM_L LEFT_SHIFT Z         &kp X     &kp C              &kp V                  &kp SEMI                 &kp LC(T)    &lt_to 3 4     &kp G        &kp D  &kp M  &kp J  &HRM_R RIGHT_SHIFT B
+&sands_lang LEFT_GUI LANG2  &kp LEFT  &kp RIGHT          &lt_kp WINDOW LG(W)    &lt 2 SPACE              &lt 1 TAB    &kp BACKSPACE  &lt 2 ENTER                       &sands_lang RA(RIGHT_GUI) LANG1
             >;
         };
 
@@ -108,7 +134,7 @@
             display-name = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                        &kp F13  &kp F14  &kp F15  &kp F16  &kp F17
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                        &kp FSLH  &kp EQUAL  &kp STAR  &kp PLUS  &kp PRCNT
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5             &kp CARET  &kp N6    &kp N7     &kp N8    &kp N9    &kp N0
 &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans    &trans     &kp F11   &kp F12    &trans    &trans    &kp DLLR
 &trans  &trans  &trans  &trans  &trans   &trans    &trans     &trans                                   &trans
@@ -130,7 +156,7 @@
             display-name = "Ctrl";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp LG(MINUS)   &kp LG(PLUS)  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP                        &trans         &trans               &trans  &trans  &trans
+&kp LG(MINUS)   &kp LG(PLUS)  &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP                        &kp F14        &kp F15              &trans  &trans  &kp LS(GRAVE)
 &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &trans  &trans         &trans               &trans  &trans  &trans
 &bt BT_CLR_ALL  &out OUT_USB  &out OUT_TOG  &out OUT_BLE  &trans        &bt BT_CLR    &trans  &input_userid  &input_email_proton  &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans                                              &trans
@@ -166,6 +192,16 @@
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
+
+        window_layer {
+            display-name = "Window";
+            bindings = <
+&trans      &trans          &trans          &trans          &trans                              &kp LA(N1)      &kp LA(N2)      &kp LA(N3)      &kp LA(N4)      &kp LA(N5)
+&trans      &kp LA(LS(H))   &kp LA(LS(J))   &kp LA(LS(K))   &kp LA(LS(L))               &trans  &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)       &kp LA(TAB)
+&kp LA(F)   &kp LA(SPACE)   &trans          &trans          &trans          &trans      &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &kp LA(LS(N4))  &kp LA(LS(N5))
+&trans      &trans          &trans          &trans          &trans          &trans      &trans  &trans                                                          &trans
             >;
         };
     };
