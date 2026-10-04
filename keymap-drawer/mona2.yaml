@@ -37,7 +37,7 @@ layers:
   - {t: '&to_layer_0 LANG2', h: LEFT GUI}
   - LEFT
   - RIGHT
-  - Gui+W
+  - {t: Gui+W, h: Window}
   - {t: SPACE, h: Raise}
   - {t: TAB, h: Lower}
   - BACKSPACE
@@ -49,11 +49,11 @@ layers:
   - F3
   - F4
   - F5
-  - F13
-  - F14
-  - F15
-  - F16
-  - F17
+  - /
+  - '='
+  - '*'
+  - +
+  - '%'
   - '1'
   - '2'
   - '3'
@@ -135,11 +135,11 @@ layers:
   - MUTE
   - VOL DN
   - VOL UP
+  - F14
+  - F15
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+`
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -296,6 +296,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Window:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+1
+  - Alt+2
+  - Alt+3
+  - Alt+4
+  - Alt+5
+  - {t: ▽, type: trans}
+  - Alt+Sft+H
+  - Alt+Sft+J
+  - Alt+Sft+K
+  - Alt+Sft+L
+  - {t: ▽, type: trans}
+  - Alt+H
+  - Alt+J
+  - Alt+K
+  - Alt+L
+  - Alt+TAB
+  - Alt+F
+  - Alt+SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Alt+Sft+1
+  - Alt+Sft+2
+  - Alt+Sft+3
+  - Alt+Sft+4
+  - Alt+Sft+5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
