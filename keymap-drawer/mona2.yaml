@@ -302,16 +302,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Window:
-  - Alt+6
-  - Alt+7
-  - Alt+8
-  - Alt+9
-  - Alt+0
   - Alt+1
   - Alt+2
   - Alt+3
   - Alt+4
   - Alt+5
+  - Alt+6
+  - Alt+7
+  - Alt+8
+  - Alt+9
+  - Alt+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
