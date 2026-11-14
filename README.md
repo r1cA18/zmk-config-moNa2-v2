@@ -54,8 +54,8 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 
 | キー | 動作 | Shortcut |
 | --- | --- | --- |
-| `F` `W` `R` `Y` `P` | Workspace 1-5へ切り替え | `Alt+1`-`Alt+5` |
-| `Q` `L` `U` `,` `.` | Workspace 6-10へ切り替え | `Alt+6`-`Alt+0` |
+| `Q` `L` `U` `,` `.` | Workspace 1-5へ切り替え | `Alt+1`-`Alt+5` |
+| `F` `W` `R` `Y` `P` | Workspace 6-10へ切り替え | `Alt+6`-`Alt+0` |
 | `K` `T` `N` `S` | Focusを左下上右へ移動 | `Alt+H/J/K/L` |
 | `G` | 次のmonitorへfocusを移動 | `Alt+.` |
 | `H` | 直前のworkspaceへ戻る | `Alt+Tab` |
@@ -70,7 +70,7 @@ Window layer中は`Backspace`の位置がShiftになります。Shiftを押し�
 | `K` `T` `N` `S` | Windowを左下上右へ移動 | `Alt+Shift+H/J/K/L` |
 | `G` | Windowを次のmonitorへ移動してfocusも追従 | `Alt+Shift+.` |
 
-Workspace 1-5はmain monitor、6-10はsecondary monitorに表示されます。monitorが1台の場合はすべてmain monitorに表示されます。Focus移動はRaise layerの矢印と同じ位置です。
+Workspaceキーは数字キーと同じく左手が1-5、右手が6-10です。Workspace 1-5はmain monitor、6-10はsecondary monitorに表示されます。monitorが1台の場合はすべてmain monitorに表示されます。Focus移動はRaise layerの矢印と同じ位置です。
 
 ## Layer構成
 
