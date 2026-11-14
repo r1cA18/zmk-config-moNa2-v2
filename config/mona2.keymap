@@ -198,10 +198,10 @@
         window_layer {
             display-name = "Window";
             bindings = <
-&trans      &trans          &trans          &trans          &trans                              &kp LA(N1)      &kp LA(N2)      &kp LA(N3)      &kp LA(N4)      &kp LA(N5)
-&trans      &kp LA(LS(H))   &kp LA(LS(J))   &kp LA(LS(K))   &kp LA(LS(L))               &trans  &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)       &kp LA(TAB)
-&kp LA(F)   &kp LA(SPACE)   &trans          &trans          &trans          &trans      &trans  &kp LA(LS(N1))  &kp LA(LS(N2))  &kp LA(LS(N3))  &kp LA(LS(N4))  &kp LA(LS(N5))
-&trans      &trans          &trans          &trans          &trans          &trans      &trans  &trans                                                          &trans
+&kp LA(N6)  &kp LA(N7)      &kp LA(N8)      &kp LA(N9)      &kp LA(N0)                          &kp LA(N1)      &kp LA(N2)      &kp LA(N3)      &kp LA(N4)      &kp LA(N5)
+&trans      &trans          &trans          &trans          &trans                      &trans  &kp LA(H)       &kp LA(J)       &kp LA(K)       &kp LA(L)       &kp LA(TAB)
+&kp LA(F)   &kp LA(SPACE)   &trans          &trans          &trans          &trans      &trans  &kp LA(DOT)     &trans          &trans          &trans          &trans
+&trans      &trans          &trans          &trans          &trans          &trans      &kp LSHFT  &trans                                                       &trans
             >;
         };
     };

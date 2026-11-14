@@ -55,14 +55,22 @@ moNa2 v2とCOROPIT向けの個人用ZMK設定です。
 | キー | 動作 | Shortcut |
 | --- | --- | --- |
 | `F` `W` `R` `Y` `P` | Workspace 1-5へ切り替え | `Alt+1`-`Alt+5` |
-| `G` `D` `M` `J` `B` | Windowをworkspace 1-5へ移動してfocusも追従 | `Alt+Shift+1`-`Alt+Shift+5` |
+| `Q` `L` `U` `,` `.` | Workspace 6-10へ切り替え | `Alt+6`-`Alt+0` |
 | `K` `T` `N` `S` | Focusを左下上右へ移動 | `Alt+H/J/K/L` |
-| `I` `A` `O` `-` | Windowを左下上右へ移動 | `Alt+Shift+H/J/K/L` |
+| `G` | 次のmonitorへfocusを移動 | `Alt+.` |
 | `H` | 直前のworkspaceへ戻る | `Alt+Tab` |
 | `Z` | Fullscreen | `Alt+F` |
 | `X` | Floatingとtilingの切り替え | `Alt+Space` |
 
-Focus移動はRaise layerの矢印と同じ位置です。Windowの移動先workspaceは切り替えキーの同じ列に配置しています。
+Window layer中は`Backspace`の位置がShiftになります。Shiftを押しながら操作すると、focus中のwindowが移動します。
+
+| キー | Shiftを押したときの動作 | Shortcut |
+| --- | --- | --- |
+| Workspaceキー | Windowをworkspaceへ移動してfocusも追従 | `Alt+Shift+1`-`Alt+Shift+0` |
+| `K` `T` `N` `S` | Windowを左下上右へ移動 | `Alt+Shift+H/J/K/L` |
+| `G` | Windowを次のmonitorへ移動してfocusも追従 | `Alt+Shift+.` |
+
+Workspace 1-5はmain monitor、6-10はsecondary monitorに表示されます。monitorが1台の場合はすべてmain monitorに表示されます。Focus移動はRaise layerの矢印と同じ位置です。
 
 ## Layer構成
 
