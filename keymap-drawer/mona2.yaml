@@ -302,21 +302,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Window:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+6
+  - Alt+7
+  - Alt+8
+  - Alt+9
+  - Alt+0
   - Alt+1
   - Alt+2
   - Alt+3
   - Alt+4
   - Alt+5
   - {t: ▽, type: trans}
-  - Alt+Sft+H
-  - Alt+Sft+J
-  - Alt+Sft+K
-  - Alt+Sft+L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+H
   - Alt+J
@@ -330,17 +330,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Sft+1
-  - Alt+Sft+2
-  - Alt+Sft+3
-  - Alt+Sft+4
-  - Alt+Sft+5
+  - Alt+.
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
